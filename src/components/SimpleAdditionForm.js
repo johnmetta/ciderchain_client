@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import AdditiveSelector from './AdditiveSelector';
 import SourceSelector from './SourceSelector';
 import VesselSelector from './VesselSelector';
-import StateSelector from './States/StateSelector';
+//import StateSelector from './States/StateSelector';
 import UnitSelector from './UnitSelector';
 
 export default class SimpleAdditionForm extends Component {
@@ -29,6 +29,7 @@ export default class SimpleAdditionForm extends Component {
                placeholder='Amount'
                value={this.state.amount} />
         <UnitSelector callbackParent={this.handleChange} />
+        <VesselSelector callbackParent={this.handleChange} />
         <button className='btn btn-primary'
                 type='submit' >
           Save
